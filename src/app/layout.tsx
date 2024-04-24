@@ -3,6 +3,8 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import Sidebar, { NavItem } from "@/components/Sidebar"
 import HomeIcon from "@mui/icons-material/Home"
+import LibraryBooksIcon from '@mui/icons-material/LibraryBooks'
+import AutoStoriesIcon from '@mui/icons-material/AutoStories'
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -11,11 +13,21 @@ const navItems:NavItem[] = [
         label: "Home",
         link: "/",
         icon: <HomeIcon />
+    },
+    {
+        label: "Cadastrar Livro",
+        link: "/livros/salvar",
+        icon: <AutoStoriesIcon />
+    },
+    {
+        label: "Listar Livros",
+        link: "/livros/listar",
+        icon: <LibraryBooksIcon />
     }
 ]
 
 export const metadata: Metadata = {
-    title: "NextJS - Template"
+    title: "Cadastro de Livros"
 }
 
 export default function RootLayout({
@@ -28,7 +40,7 @@ export default function RootLayout({
         <html lang="en">
             <body className={`flex h-screen ${inter.className}`}>
                 <Sidebar 
-                    header={<span className="text-2xl font-light">Sidebar</span>}
+                    header={<span className="text-2xl font-light">Cadastro de Livros</span>}
                     items={navItems} 
                 />
 

@@ -1,4 +1,10 @@
 export type ServerData = {
-    dataId?:number,
+    dataId?:string,
     apiUrl:string
+}
+
+export type ParamsWithId = {
+    params: {
+        id:string
+    }
 }

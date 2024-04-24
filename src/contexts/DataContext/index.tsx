@@ -1,21 +1,13 @@
 "use client"
 
 import { ServerData } from "@/@types/types"
-import { Dispatch, PropsWithChildren, SetStateAction, createContext, useContext, useState } from "react"
+import { PropsWithChildren, createContext, useContext } from "react"
 
-type Data = ServerData & {
-    currentTab:string,
-    setCurrentTab:Dispatch<SetStateAction<string>>
-
-}
-
-const DataContext = createContext<Data>({} as Data)
+const DataContext = createContext<ServerData>({} as ServerData)
 
 export const DataProvider = ({ children, ...rest }: PropsWithChildren<ServerData>) => {
-    const [currentTab, setCurrentTab] = useState<string>("1")
-
     return (
-        <DataContext.Provider value={{ currentTab, setCurrentTab, ...rest }}>
+        <DataContext.Provider value={{ ...rest }}>
             {children}
         </DataContext.Provider>
     )

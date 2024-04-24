@@ -1,0 +1,107 @@
+{
+  "categorias": [
+    {
+      "id": "1",
+      "descricao": "Aventura"
+    },
+    {
+      "id": "2",
+      "descricao": "Ação"
+    },
+    {
+      "id": "3",
+      "descricao": "Ficção"
+    },
+    {
+      "id": "4",
+      "descricao": "Romance"
+    },
+    {
+      "id": "5",
+      "descricao": "Drama"
+    },
+    {
+      "id": "6",
+      "descricao": "Humor"
+    }
+  ],
+  "livros": [
+    {
+      "id": "c249",
+      "categoria": {
+        "id": "3",
+        "descricao": "Ficção"
+      },
+      "ano": 1932,
+      "autor": "Aldous Huxley",
+      "titulo": "Admirável Mundo Novo",
+      "isbn": "1234"
+    },
+    {
+      "id": "cccc",
+      "categoria": {
+        "id": "3",
+        "descricao": "Ficção"
+      },
+      "ano": 1949,
+      "autor": "George Orwell",
+      "titulo": "1984",
+      "isbn": "4567"
+    },
+    {
+      "id": "02a6",
+      "categoria": {
+        "id": "1",
+        "descricao": "Aventura"
+      },
+      "ano": 1870,
+      "autor": "Julio Verne",
+      "titulo": "Vinte mil léguas submarinas",
+      "isbn": "7891"
+    },
+    {
+      "id": "b7a4",
+      "categoria": {
+        "id": "5",
+        "descricao": "Drama"
+      },
+      "ano": 1890,
+      "autor": "Oscar Wilde",
+      "titulo": "O Retrato de Dorian Gray",
+      "isbn": "6534"
+    },
+    {
+      "id": "a825",
+      "categoria": {
+        "id": "6",
+        "descricao": "Humor"
+      },
+      "ano": 1945,
+      "autor": "George Orwell",
+      "titulo": "Revolução dos Bichos",
+      "isbn": "8765"
+    },
+    {
+      "categoria": {
+        "id": "4",
+        "descricao": "Romance"
+      },
+      "ano": 1899,
+      "autor": "Machado de Assis",
+      "titulo": "Dom Casmurro",
+      "isbn": "5632",
+      "id": "e25c"
+    },
+    {
+      "id": "da30",
+      "categoria": {
+        "id": "3",
+        "descricao": "Ficção"
+      },
+      "ano": 1953,
+      "autor": "Ray Bradbury",
+      "titulo": "Fahrenheit 451",
+      "isbn": "5487"
+    }
+  ]
+}

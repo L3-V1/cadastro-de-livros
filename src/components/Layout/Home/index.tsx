@@ -2,9 +2,9 @@
 
 import React from "react"
 import { SnackbarProvider } from 'notistack'
-import Home from "./Home"
 import { DataProvider } from "@/contexts/DataContext"
 import { ServerData } from "@/@types/types"
+import Home from "./Home"
 
 const HomeWrapper = ({ ...rest }: ServerData) => {
     return (
